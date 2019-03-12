@@ -20,7 +20,7 @@
   - __Finding the type of a value__  - `type(value)`
 
 ### Variables in Python
-  - In python you can just declare variables like `age = 28` then calling `age` should get you `25`
+  - In python you can just declare variables like `age = 28` then calling `age` should get you `28`
 ### Comments in Python
   - You declare a comment in Python by usuing a `#` at the beginning of a line 
 ---------
@@ -64,11 +64,11 @@ In Python there are two types of numbers, *__integers__* and *__floats__*
   - *Modulus* - `10 % 3` -> 1 (3 goes into 10, 3 times with a *__remainder__* of 1)
   - Python follows the order of operations (PEMDAS) so, this expression `5 + 5 * 3` -> `20` <- b/c multiply before addition so 5* 3 = 15 and 15 + 5 = 20.  
   - Shorthand for doing math on variables - Taking our age variable from above (`age = 28`)
-      - we an do `age += 5` -> `33` or `age -= 5` -> `28` `age /= 2` -> `14.0` <- remember that `/` operator gives us a float
+      - we can do `age += 5` -> `33` or `age -= 5` -> `28` `age /= 2` -> `14.0` <- remember that `/` operator gives us a float
 ---------
 ### Strings
   - Python strings seem pretty similar to JS strings
-  - You can surround them in  single, `'`, or double `""` quotes
+  - You can surround them in  single, `'`, or double `"` quotes
   - Strings have positions like in JS starting at 0 and increasing by 1
       - So for `greet = 'hello'` we can access the individual character like `greet[0]` -> 'h' or `greet[1]` -> 'e'
   - Unlike JS you can access the backwards index by using negative numbers `-1` being the last character `-2` being second to last
@@ -106,6 +106,7 @@ In Python there are two types of numbers, *__integers__* and *__floats__*
   - `list1.remove(2)` -> `[1, 3]` but what happens if we had two 2's?
   - `list1 = [1, 2, 2, 3]` and we typed `list1.remove(2)` we get -> `[1, 2, 3]` so it doesn't remove both just the first instance of that value
   - with the general python function `del()` we can do `del(list1[0])` and that would remove the first element -> `[2, 3]`
+  - [More list methods](https://www.programiz.com/python-programming/methods/list)
 -------
 ## Standard Input in Python
  - In a .py file you can prompt a user for input using the built in `input()` function
@@ -122,7 +123,7 @@ In Python there are two types of numbers, *__integers__* and *__floats__*
 for x in [variable]:
   print(x)
 ```  
-  - So to get the letter of `greet = 'hello'` to print we can write
+  - So to get the letters of `greet = 'hello'` to print we can write
 ```python  
 for x in (greet):
   print(x)
