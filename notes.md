@@ -1,4 +1,5 @@
 # Python 3
+Notes from a Javascript developer ...
 ### Why Python?
   - __Can be used for a ton of different things__
       - Build websites w/ frameworks like Django (Instagram and Dropbox both use python)
