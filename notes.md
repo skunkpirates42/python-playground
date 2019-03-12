@@ -114,3 +114,35 @@ In Python there are two types of numbers, *__integers__* and *__floats__*
  - Say you want a number instead of a string... when you go to work with that input value, you can use `int(val)` to change it into a number
  - To "log" something out to the console you can use `print()`
  - Check out the area_calc.py file for some basic `input()`, `int()` and `print()`  usage
+ -----
+## Some Control Flow stuff
+### Loops
+#### For loops in Python
+```python
+for x in [variable]:
+  print(x)
+```  
+  - So to get the letter of `greet = 'hello'` to print we can write
+```python  
+for x in (greet):
+  print(x)
+```
+  - In python you can use `range(x)` to loop through items
+      - For example you can write the following to print 0 - 9 in the console
+```python
+for x range(10):
+  print(x)
+``` 
+  - Range can take two params to define a range of numbers to print so the following will print 1 - 10. Notice the last number is an up to but NOT including that num
+```python
+for x range(1, 11):
+  print(x)
+``` 
+  - Range seems to only really works with the `int` number type (need to confirm)
+  - To print each letter in a string, we can write the following
+  - We can loop over lists.. the following will print the word, followed by its length on each line
+```python
+words = ['cat', 'window', 'defenestrate']
+for w in words:
+  print(w, len(w))
+```
