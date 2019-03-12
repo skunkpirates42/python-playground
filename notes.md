@@ -126,6 +126,13 @@ In Python there are two types of numbers, *__integers__* and *__floats__*
  - Check out the area_calc.py file for some basic `input()`, `int()` and `print()`  usage
  -----
 ## Some Control Flow stuff
+### Comparison operators
+  - *equal* - `==`
+  - *not equal* - `!=`
+  - *greater than* - `>`
+  - *less than* - `<`
+  - *equal to or greater than* - `=>`
+  - *equal to or less than*  - `=<`
 ### If statements
 ```python
 x = int(input("enter a number"))
@@ -170,3 +177,16 @@ words = ['cat', 'window', 'defenestrate']
 for w in words:
   print(w, len(w))
 ```
+### Functions
+  - declare a function with `def`, which stands for define
+  - then we need to name the function `def greet`
+  - and finally add open and closing parens and a colon `def greet():`
+```
+def greet():
+  print('Hello World')
+
+greet()
+# 'Hello World'
+```
+  - You can pass params into the function inside the parens in the func definition line
+  - Python has support for default params too `def greet(name = 'Peter', time = 'morning'):`
