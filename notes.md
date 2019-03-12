@@ -5,6 +5,10 @@
       - Run scientific applications - Python is very good at crunching numbers. (NASA uses python for some stuff)
       - Control robots w/ it 
       - Interact w/ things like Rasberry Pi
+      - Build simple games
+      - Write a small customizable database
+      - build a specialized GUI app
+      - automate computer tasks like performing a search and replace over a large number of text files or rearranging photo files in a custom way
   - __It is a general purpose programming language -- It can be used for many different things__
       - It doesn't have any specific purpose so its very flexible, as opposed to something like PHP which is designed for the web ony
   - __A high-level programming language__
@@ -17,7 +21,10 @@
 
   - __Closing the python shell in terminal__  - `quit()` or ctrl + Z `^Z`  
 
-  - __Finding the type of a value__  - `type(value)`
+  - __Finding the type of a value__  - `type(value)`  
+
+  - __Access to the last printed expression__ - `_`
+      - __Ex:__ `greet = 'hello'` (hit enter) | `greet` (hit enter) | `'hello'` prints | `_` -> | `'hello'` | `_ + ' ladies'` -> |`'hello ladies'`
 
 ### Variables in Python
   - In python you can just declare variables like `age = 28` then calling `age` should get you `28`
@@ -69,6 +76,7 @@ In Python there are two types of numbers, *__integers__* and *__floats__*
 ### Strings
   - Python strings seem pretty similar to JS strings
   - You can surround them in  single, `'`, or double `"` quotes
+  - Use `\` to escape characters
   - Strings have positions like in JS starting at 0 and increasing by 1
       - So for `greet = 'hello'` we can access the individual character like `greet[0]` -> 'h' or `greet[1]` -> 'e'
   - Unlike JS you can access the backwards index by using negative numbers `-1` being the last character `-2` being second to last
@@ -117,6 +125,20 @@ In Python there are two types of numbers, *__integers__* and *__floats__*
  - Check out the area_calc.py file for some basic `input()`, `int()` and `print()`  usage
  -----
 ## Some Control Flow stuff
+### If statements
+```python
+x = int(input("enter a number"))
+if x < 0:
+  x = 0
+  print("don't be negative, changed to 0")
+  elif x == 0;
+    print("Zero")
+  elif x == 1;
+    print("Single")
+  else: 
+    print("More")
+```
+  - There can be 0 or more `elif`'s (short for else if) and the `else` is optional
 ### Loops
 #### For loops in Python
 ```python
